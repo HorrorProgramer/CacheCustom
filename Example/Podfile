@@ -1,0 +1,14 @@
+use_frameworks!
+
+target 'CacheCustom_Example' do
+  pod 'CacheCustom', :path => '../'
+
+  target 'CacheCustom_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+    pod 'Expecta'
+    pod 'FBSnapshotTestCase'
+    pod 'Expecta+Snapshots'
+  end
+end
